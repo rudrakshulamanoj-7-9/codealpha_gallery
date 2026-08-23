@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="welcome-screen" class="welcome-screen">
+    <h1>✨ Welcome to MY Gallery ✨</h1>
+    <p>Press Enter to Explore...</p>
+  </div>
+  <div id="gallery-section" class="hidden">
+    <h1 class="title">My Image Gallery...!</h1>
+    <div class="filters">
+      <button onclick="filterImages('all')">All</button>
+      <button onclick="filterImages('nature')">Nature</button>
+      <button onclick="filterImages('cars')">Cars</button>
+      <button onclick="filterImages('bikes')">Bikes</button>
+    </div>
+<div class="gallery">
+  <img src="https://picsum.photos/id/10/600/400" alt="Nature" class="gallery-item nature">
+  <img src="https://picsum.photos/id/15/600/400" alt="Nature" class="gallery-item nature">
+  <img src="https://picsum.photos/id/29/600/400" alt="Nature" class="gallery-item nature">
+  <img src="https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Nature" class="gallery-item nature">
+  <img src="https://images.pexels.com/photos/572897/pexels-photo-572897.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Nature" class="gallery-item nature">
+  <img src="https://images.pexels.com/photos/34950/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600" alt="Nature" class="gallery-item nature">
+  <img src="https://picsum.photos/id/1070/600/400" alt="Car" class="gallery-item cars">
+  <img src="https://picsum.photos/id/1071/600/400" alt="Car" class="gallery-item cars">
+  <img src="https://picsum.photos/id/1072/600/400" alt="Car" class="gallery-item cars">
+  <img src="https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Car" class="gallery-item cars">
+  <img src="https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Car" class="gallery-item cars">
+  <img src="https://images.pexels.com/photos/120049/pexels-photo-120049.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Car" class="gallery-item cars">
+  <img src="https://imgd.aeplcdn.com/600x337/bw/ec/39760/2019-BikeWale-TrackDay-Royal-Enfield-Continental-GT-650-156009.jpg?wm=2&q=75"
+alt="Royal Enfield GT 650"
+class="gallery-item bikes">
+  <img src="https://images.pexels.com/photos/2116475/pexels-photo-2116475.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Bike" class="gallery-item bikes">
+  <img src="https://images.pexels.com/photos/163210/motorcycles-race-helmets-pilots-163210.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Bike" class="gallery-item bikes">
+  <img src="https://images.pexels.com/photos/595808/pexels-photo-595808.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Bike" class="gallery-item bikes">
+  <img src="https://images.pexels.com/photos/2393821/pexels-photo-2393821.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Super Bike" class="gallery-item bikes">
+  <img src="https://images.pexels.com/photos/1413412/pexels-photo-1413412.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Sports Bike" class="gallery-item bikes">
+</div>
+    <div id="lightbox" class="lightbox">
+      <span class="close">&times;</span>
+      <img class="lightbox-img" id="lightbox-img">
+      <button class="prev">⟨</button>
+      <button class="next">⟩</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
